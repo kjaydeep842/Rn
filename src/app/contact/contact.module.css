@@ -1,0 +1,138 @@
+.header {
+  background: var(--primary);
+  color: white;
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.header h1 {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.header p {
+  font-size: 1.25rem;
+  opacity: 0.9;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+.info h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.description {
+  color: var(--muted);
+  margin-bottom: 3rem;
+}
+
+.infoList {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.infoItem {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  background: rgba(48, 25, 82, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.infoItem h4 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.infoItem p {
+  color: var(--muted);
+}
+
+.formContainer {
+  background: white;
+  padding: 3rem;
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formGroup label {
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--primary);
+}
+
+.formGroup input, 
+.formGroup select, 
+.formGroup textarea {
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border);
+  background: #f8fafc;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.formGroup input:focus, 
+.formGroup select:focus, 
+.formGroup textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .formContainer {
+    background: #1e293b;
+  }
+  .icon {
+    background: rgba(167, 139, 250, 0.2);
+  }
+  .formGroup label {
+    color: #a78bfa;
+  }
+  .formGroup input, 
+  .formGroup select, 
+  .formGroup textarea {
+    background: #0f172a;
+    color: white;
+  }
+}

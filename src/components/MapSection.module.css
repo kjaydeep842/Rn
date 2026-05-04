@@ -1,0 +1,36 @@
+.mapSection {
+  padding: 6rem 0;
+  background: var(--background);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.header h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: var(--foreground);
+}
+
+.header p {
+  font-size: 1.1rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.mapContainer {
+  width: 100%;
+  border-radius: 2rem;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 768px) {
+  .header h2 {
+    font-size: 2rem;
+  }
+}

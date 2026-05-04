@@ -1,0 +1,64 @@
+.trustLogos {
+  background: var(--background);
+  padding: 3rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+.logoGrid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.logoItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.logoItem:hover {
+  opacity: 1;
+}
+
+.iconPlaceholder {
+  width: 50px;
+  height: 50px;
+  background: var(--primary);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  border-radius: 8px;
+  font-size: 0.75rem;
+}
+
+.logoItem span {
+  font-weight: 600;
+  color: var(--foreground);
+}
+
+@media (max-width: 768px) {
+  .logoGrid {
+    gap: 2rem;
+  }
+}
